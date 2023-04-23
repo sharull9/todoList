@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "todoList",
-    "slug": "todoList",
+    "name": "todolist",
+    "slug": "todo-list",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c65fa36c-01bf-49be-8084-d2ea26f9396a"
+      }
+    },
+    "owner": "sharull"
   }
 }
