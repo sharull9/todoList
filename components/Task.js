@@ -1,9 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import { Motion } from "@legendapp/motion";
-import { useState } from "react";
 
 export default function Task({ title }) {
-  // const [scaleValue, setScaleValue] = useState(1);
   return (
     <Motion.View
       style={styles.item}
@@ -26,6 +24,7 @@ export default function Task({ title }) {
 
 const styles = StyleSheet.create({
   item: {
+    height: 60,
     backgroundColor: "#fff",
     paddingVertical: 10,
     paddingHorizontal: 10,
@@ -37,9 +36,13 @@ const styles = StyleSheet.create({
     shadowOffset: { width: -2, height: 4 },
     shadowOpacity: 0.2,
     shadowRadius: 3,
+    marginBottom: 10,
   },
   title: {
     width: "90%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-start",
   },
   checkbox: {
     width: 12,
